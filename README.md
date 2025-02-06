@@ -1,7 +1,7 @@
 # Logbook
 Cybersecurity and data privacy - Spring 2025
 
-| Date  | Used hours | Subject(s) |  output |
+| DATE  | HOURS | SUBJECT(s+S) |  OUTPUT |
 | :---         |     :---:      |     :---:      |     :---:      |
 | 17.01.2025 | 2 | Kick-off lecture  | Github account   |
 | 17.01.2025 | 1 | Cisco Introduction to Cybersecurity  | End 1.1 Section  |
