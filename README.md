@@ -16,3 +16,4 @@ Cybersecurity and data privacy - Spring 2025
 | 06.02.2025 | 1 | PortSwigger environment  | Lab 3  |
 | 08.02.2025 | 1 | PortSwigger environment  | Lab 4  |
 | 14.02.2025 | 2 | Attend Class  | Read the initial situation |
+| 16.02.2025 | 4 | Project work  | Step 2 and 3 ready |
