@@ -2,19 +2,32 @@
 **Date:** 07-03-2025  
 **Tester:** Maria Alejandra Cabrera Arauz
 
-## 🔹 Introduction  
-This test evaluates the security and functionality vulnerabilities in the Booking System application.
+## Differences Between Versions
 
-## 🔹 Summary of Previous Tests  
-- **ZAP Report 1 (2025-02-17):** Multiple security vulnerabilities were identified, including possible SQL injection and XSS, as well as failures in access controls.
-- **Corrections applied:** Measures were implemented to improve protection against XSS attacks, and authentication and authorization controls were reinforced.
+### **Findings in the First Version (2025-02-17)**
+- **Medium-Risk Issues (2):**
+  - **Missing Content Security Policy (CSP) Header**: The application lacked a CSP configuration, which exposed it to Cross-Site Scripting (XSS) and data injection attacks.
+  - **Missing Anti-Clickjacking Header**: No X-Frame-Options or CSP `frame-ancestors` directive, making it vulnerable to Clickjacking attacks.
+- **Low-Risk Issues (2):**
+  - **Application Error Disclosure**: Some error messages exposed internal application details.
+  - **Missing X-Content-Type-Options Header**: Increased risk of MIME-type sniffing attacks.
 
-## 🔹 Tests Performed  
-- Authentication and access control testing.
-- Scanning with Checkmarx and OWASP ZAP.
-- SQL injection and XSS validation.
+### **Findings in the Second Version (2025-03-03)**
+- **Medium-Risk Issues (1):**
+  - **Wildcard Directive in CSP**: The CSP policy is now present, but it allows wildcard sources (`*`), which can still lead to security risks.
+- **Informational Issues (3):**
+  - **Sensitive Information Disclosure in URL**: Some API requests include sensitive data in query parameters.
+  - **User-Controlled HTML Attributes (Potential XSS)**: Some HTML elements accept user input without proper validation.
+  - **Authentication Request Identified**: Indicating potential exposure of authentication mechanisms.
 
-## 🔹 Conclusions  
-The tests identified potential attack vectors related to SQL injection and XSS. Although fixes were applied, it is essential to conduct a thorough penetration analysis to ensure the application's full security. Continuous evaluation of the system is recommended to identify emerging vulnerabilities.
+### **Key Improvements in the Second Version**
+- CSP is now implemented but still requires further restrictions.  
+- No Clickjacking vulnerabilities detected.  
+- Reduced error disclosure issues.  
+
+### **Remaining Security Concerns**
+- The CSP wildcard directive should be removed or restricted to specific trusted sources.
+- User input sanitization is needed to prevent potential XSS attacks.
+- Sensitive information should not be passed through URLs.  
 
 ---
