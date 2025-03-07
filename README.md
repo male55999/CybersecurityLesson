@@ -19,3 +19,4 @@ Cybersecurity and data privacy - Spring 2025
 | 16.02.2025 | 4 | The Booking system project → Phase 1 → Part 1  | Step 2 and 3 ready |
 | 17.02.2025 | 4 | The Booking system project → Phase 1 → Part 1  | Complete |
 | 03.03.2025 | 4 | The Booking system project → Phase 1 → Part 2  | Complete |
+| 07.03.2025 | 1 | The Booking system project → Phase 1  | Suggested Changes |
