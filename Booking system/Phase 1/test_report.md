@@ -1,5 +1,5 @@
 # Test Report - Booking System Phase 1
-**Date:** 2025-03-03  
+**Date:** 07-03-2025  
 **Tester:** Maria Alejandra Cabrera Arauz
 
 ## 🔹 Introduction  
