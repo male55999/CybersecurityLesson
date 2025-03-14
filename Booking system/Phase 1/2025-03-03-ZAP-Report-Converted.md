@@ -226,8 +226,8 @@ This table shows the number of alerts of each alert type, together with the aler
 Risk=Medio, Confidence=Alta (1)
 
 
-	1. #### 
-	http://localhost:8080 (1)
+1. #### 
+http://localhost:8080 (1)
 	
 	
 		1. ##### 
@@ -432,21 +432,21 @@ Risk=Informativo, Confidence=Media (1)
 Risk=Informativo, Confidence=Baja (2)
 
 
-	1. #### 
-	http://localhost:8080 (2)
+1. #### 
+http://localhost:8080 (2)
 	
 	
-		1. ##### 
-		[Atributo de elemento HTML controlable por el usuario (XSS potencial)](#alert-type-1) (1)
+1. ##### 
+[Atributo de elemento HTML controlable por el usuario (XSS potencial)](#alert-type-1) (1)
 		
 		
-			1. 
+1. 
 			
-			GET http://localhost:8080/UI/automation/view/planProgress/override?apikey=ZAP&planId=ZAP
+GET http://localhost:8080/UI/automation/view/planProgress/override?apikey=ZAP&planId=ZAP
 			
 			
 			
-			|  |  |
+|  |  |
 			| --- | --- |
 			| Alert tags | 
 				* [OWASP\_2017\_A01](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html)
@@ -457,130 +457,130 @@ Risk=Informativo, Confidence=Baja (2)
 			| Request | 
 			Request line and header section (356 bytes)
 			
-			```
-			GET http://localhost:8080/UI/automation/view/planProgress/override?apikey=ZAP&planId=ZAP HTTP/1.1
-			host: localhost:8080
-			user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-			pragma: no-cache
-			cache-control: no-cache
-			referer: http://localhost:8080/UI/automation/view/planProgress/
+```
+GET http://localhost:8080/UI/automation/view/planProgress/override?apikey=ZAP&planId=ZAP HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/UI/automation/view/planProgress/
 			
 			
-			```
-			
-			 
-			Request body (0 bytes)
-			
-			 |
-			| Response | 
-			Status line and header section (565 bytes)
-			
-			```
-			HTTP/1.1 200 OK
-			Pragma: no-cache
-			Cache-Control: no-cache, no-store, must-revalidate
-			Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; child-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self'
-			Referrer-Policy: no-referrer
-			Access-Control-Allow-Methods: GET,POST,OPTIONS
-			Access-Control-Allow-Headers: ZAP-Header
-			X-Frame-Options: DENY
-			X-XSS-Protection: 1; mode=block
-			X-Content-Type-Options: nosniff
-			X-Clacks-Overhead: GNU Terry Pratchett
-			content-length: 1104
-			Content-Type: text/html; charset=UTF-8
-			
-			
-			```
+```
 			
 			 
-			Response body (1104 bytes)
+Request body (0 bytes)
 			
-			```
-			<!DOCTYPE html>
-			<head>
-			<title>ZAP API UI</title>
-			<script src="/script.js/?v=2&apinonce=cabba01554ef81cf" type="text/javascript"></script>
-			</head>
-			<body>
-			<h1><a href="/UI/">ZAP API UI</a></h1>
-			<h2><a href="/UI/automation/">Componente: automation</a></h2>
-			<h3>Vista:planProgress</h3>
+|
+| Response | 
+Status line and header section (565 bytes)
 			
-			<form id="zapform" name="zapform" action="override"><table>
-			<tr><td>Formato de Salida</td><td>
-			<select id="zapapiformat">
-			<option value="JSON">JSON</option>
-			<option value="JSONP" disabled>JSONP</option>
-			<option value="HTML">HTML</option>
-			<option value="XML">XML</option>
-			</select>
-			</td><td></td></tr>
-			<tr><td>apikey*</td><td><input id="apikey" name="apikey" value=""/></td><td></td></tr>
-			<tr><td>Método de Formulario</td><td><select id="formMethod">
-			<option value="GET" selected>GET</option>
-			<option value="POST">POST</option>
-			</select>
-			</td><td></td></tr>
-			<tr><td>planId*</td><td><input id="planId" name="planId"/></td><td></td></tr>
-			<tr><td></td><td><input id="button" value="planProgress" type="submit" zap-component="automation" zap-type="view" zap-name="planProgress"/>
-			</td><td></td></tr>
-			</table>
-			</form>
-			</body>
+```
+HTTP/1.1 200 OK
+Pragma: no-cache
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; child-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self'
+Referrer-Policy: no-referrer
+Access-Control-Allow-Methods: GET,POST,OPTIONS
+Access-Control-Allow-Headers: ZAP-Header
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Clacks-Overhead: GNU Terry Pratchett
+content-length: 1104
+Content-Type: text/html; charset=UTF-8
 			
-			```
 			
-			 |
-			| Parameter | 
-			```
-			apikey
-			```
-			 |
-			| Solution | Válida la entrada y sanea la salida antes de escribirla en cualquier atributo HTML. |
-		2. ##### 
-		[Petición de Autenticación Identificada](#alert-type-3) (1)
+```
+			
+			 
+Response body (1104 bytes)
+			
+```
+<!DOCTYPE html>
+<head>
+<title>ZAP API UI</title>
+<script src="/script.js/?v=2&apinonce=cabba01554ef81cf" type="text/javascript"></script>
+</head>
+<body>
+<h1><a href="/UI/">ZAP API UI</a></h1>
+<h2><a href="/UI/automation/">Componente: automation</a></h2>
+<h3>Vista:planProgress</h3>
+	
+<form id="zapform" name="zapform" action="override"><table>
+<tr><td>Formato de Salida</td><td>
+<select id="zapapiformat">
+<option value="JSON">JSON</option>
+<option value="JSONP" disabled>JSONP</option>
+<option value="HTML">HTML</option>
+<option value="XML">XML</option>
+</select>
+</td><td></td></tr>
+<tr><td>apikey*</td><td><input id="apikey" name="apikey" value=""/></td><td></td></tr>
+<tr><td>Método de Formulario</td><td><select id="formMethod">
+<option value="GET" selected>GET</option>
+<option value="POST">POST</option>
+</select>
+</td><td></td></tr>
+<tr><td>planId*</td><td><input id="planId" name="planId"/></td><td></td></tr>
+<tr><td></td><td><input id="button" value="planProgress" type="submit" zap-component="automation" zap-type="view" zap-name="planProgress"/>
+</td><td></td></tr>
+</table>
+</form>
+</body>
+			
+```
+			
+|
+| Parameter | 
+```
+apikey
+```
+|
+| Solution | Válida la entrada y sanea la salida antes de escribirla en cualquier atributo HTML. |
+2. ##### 
+[Petición de Autenticación Identificada](#alert-type-3) (1)
 		
 		
-			1. 
+1. 
 			
-			GET http://localhost:8080/UI/network/action/setHttpProxy/override?apikey=ZAP&host=ZAP&password=ZAP&port=ZAP&realm=ZAP&username=ZAP
-			
-			
-			
-			|  |  |
-			| --- | --- |
-			| Alert tags | 
-			 |
-			| Alert description | La petición en cuestión se ha identificado como una petición de autenticación. El campo "Otra información" contiene un conjunto de líneas key=vvalue que identifican cualquier campo relevante. Si la solicitud está en un contexto que tiene un método de autenticación configurado como "Detección automática", esta regla cambiará la autenticación para que coincida con la petición identificada. |
-			| Other info | userParam=username
-			userValue=ZAP
-			passwordParam=password
-			referer=http://localhost:8080/UI/network/action/setHttpProxy/ |
-			| Request | 
-			Request line and header section (397 bytes)
-			
-			```
-			GET http://localhost:8080/UI/network/action/setHttpProxy/override?apikey=ZAP&host=ZAP&password=ZAP&port=ZAP&realm=ZAP&username=ZAP HTTP/1.1
-			host: localhost:8080
-			user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-			pragma: no-cache
-			cache-control: no-cache
-			referer: http://localhost:8080/UI/network/action/setHttpProxy/
+GET http://localhost:8080/UI/network/action/setHttpProxy/override?apikey=ZAP&host=ZAP&password=ZAP&port=ZAP&realm=ZAP&username=ZAP
+		
 			
 			
-			```
+|  |  |
+| --- | --- |
+| Alert tags | 
+|
+| Alert description | La petición en cuestión se ha identificado como una petición de autenticación. El campo "Otra información" contiene un conjunto de líneas key=vvalue que identifican cualquier campo relevante. Si la solicitud está en un contexto que tiene un método de autenticación configurado como "Detección automática", esta regla cambiará la autenticación para que coincida con la petición identificada. |
+| Other info | userParam=username
+userValue=ZAP
+passwordParam=password
+referer=http://localhost:8080/UI/network/action/setHttpProxy/ |
+| Request | 
+Request line and header section (397 bytes)
+			
+```
+GET http://localhost:8080/UI/network/action/setHttpProxy/override?apikey=ZAP&host=ZAP&password=ZAP&port=ZAP&realm=ZAP&username=ZAP HTTP/1.1
+host: localhost:8080
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost:8080/UI/network/action/setHttpProxy/
+			
+			
+```
 			
 			 
-			Request body (0 bytes)
+Request body (0 bytes)
 			
-			 |
-			| Response | 
-			Status line and header section (565 bytes)
-			
-			```
-			HTTP/1.1 200 OK
-			Pragma: no-cache
+|
+| Response | 
+Status line and header section (565 bytes)
+	
+```
+HTTP/1.1 200 OK
+Pragma: no-cache
 			Cache-Control: no-cache, no-store, must-revalidate
 			Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; child-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self'
 			Referrer-Policy: no-referrer
@@ -628,28 +628,28 @@ Risk=Informativo, Confidence=Baja (2)
 			<tr><td>host*</td><td><input id="host" name="host"/></td><td>El host, nombre o dirección.</td></tr>
 			<tr><td>port*</td><td><input id="port" name="port"/></td><td>El puerto.</td></tr>
 			<tr><td>realm</td><td><input id="realm" name="realm"/></td><td>El reino de autenticación.</td></tr>
-			<tr><td>username</td><td><input id="username" name="username"/></td><td>El nombre de usuario.</td></tr>
-			<tr><td>password</td><td><input id="password" name="password"/></td><td>La contraseña.</td></tr>
-			<tr><td></td><td><input id="button" value="setHttpProxy" type="submit" zap-component="network" zap-type="action" zap-name="setHttpProxy"/>
-			</td><td></td></tr>
-			</table>
-			</form>
-			</body>
+<tr><td>username</td><td><input id="username" name="username"/></td><td>El nombre de usuario.</td></tr>
+<tr><td>password</td><td><input id="password" name="password"/></td><td>La contraseña.</td></tr>
+<tr><td></td><td><input id="button" value="setHttpProxy" type="submit" zap-component="network" zap-type="action" zap-name="setHttpProxy"/>
+</td><td></td></tr>
+</table>
+</form>
+</body>
 			
-			```
+```
 			
-			 |
-			| Parameter | 
-			```
-			username
-			```
-			 |
-			| Evidence | 
-			```
-			password
-			```
-			 |
-			| Solution | Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir. |
+|
+| Parameter | 
+```
+username
+```
+|
+| Evidence | 
+```
+password
+```
+|
+| Solution | Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir. |
 
 
 
