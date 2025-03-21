@@ -25,3 +25,4 @@ Cybersecurity and data privacy - Spring 2025
 | 16.03.2025 | 2 | The Booking system project → Phase 2 → Part 1  | Part 2 |
 | 19.03.2025 | 2 | The Booking system project → Phase 2 → Part 2  | Performing a dictionary attack via a web interface |
 | 21.03.2025 | 2 | The Booking system project → Phase 2 → Part 1  | Suggested Changes |
+| 21.03.2025 | 2 | The Booking system project → Phase 2 → Part 2  | Performing a non-dictionary attack via a web interface |
