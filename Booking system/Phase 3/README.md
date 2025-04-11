@@ -22,12 +22,6 @@
 ❌ Fail (not allowed)  
 ⚠️ Attention (needs review)
 
-
-**Symbols used:**  
-✅ Pass (a note can be added)  
-❌ Fail (a note can be added)  
-⚠️ Attention (a note can be added)
-
 **Notes:**  
 1. Without logging in.
 2. Unable to log in as Guest.
