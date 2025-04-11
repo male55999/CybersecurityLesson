@@ -1,15 +1,26 @@
-| **Page / Feature** | **Guest** | **Reserver** | **Administrator** |
-|:----|:----:|:----:|:----:|
-| `/` (Home Page)                | | | |
-| └─ View resource form      | ❌ | ❌ | ❌ |
-| └─ Create new resource     | ❌ | ❌ | ❌ |
-| └─ View reservations      | ✅*1 | ✅*1 | ✅*1 |
-| └─ Create new reservation   | ❌ | ❌ | ❌ |
-| `/` (Login)                | | | |
-| └─ View resource form      | ❌*2 | ✅ | ✅ |
-| └─ Create new resource     | ❌*2 | ✅ | ✅ |
-| └─ View reservations      | ❌*2 | ✅ | ✅ |
-| └─ Create new reservation   | ❌*2 | ✅ | ✅ |
+| **Page / Feature**                    | **Guest** | **Reserver** | **Administrator** |
+|:-------------------------------------|:---------:|:------------:|:-----------------:|
+| `/ Home Page`                      | ✅        | ✅           | ✅                |
+| └─ View basic content                | ✅        | ✅           | ✅                |
+| `/login`                             | ✅        | ✅           | ✅                |
+| `/resources`                         | ❌        | ✅           | ✅                |
+| └─ View resource list                | ❌        | ✅           | ✅                |
+| `/resources/create`                 | ❌        | ❌           | ✅                |
+| └─ Create new resource form          | ❌        | ❌           | ✅                |
+| `/reservations`                      | ❌        | ✅           | ✅                |
+| └─ View own reservations             | ❌        | ✅           | ✅                |
+| `/reservations/create`              | ❌        | ✅           | ✅                |
+| └─ Make new reservation              | ❌        | ✅           | ✅                |
+| `/users`                             | ❌        | ❌           | ✅                |
+| └─ View user list                    | ❌        | ❌           | ✅                |
+| `/users/create`                      | ❌        | ❌           | ✅                |
+| └─ Register new user                 | ❌        | ❌           | ✅                |
+| `/logout`                            | ❌        | ✅           | ✅                |
+
+**Symbols used:**  
+✅ Pass (allowed)  
+❌ Fail (not allowed)  
+⚠️ Attention (needs review)
 
 
 **Symbols used:**  
