@@ -6,6 +6,8 @@
 | &nbsp;⚠️&nbsp; | Have you ensured that only necessary personal data is collected (data minimization)? |
 | &nbsp;❌&nbsp; | Is user age recorded to verify that the booker is over 15 years old? |
 
+(Age is not collected. Consider adding a date of birth field to prevent underage bookings.)
+
 ---
 
 | **Result** | **User registration and management** |
@@ -15,12 +17,16 @@
 | &nbsp;⚠️&nbsp; | Is there a mechanism for the administrator to delete a reserver in<br> accordance with the "right to be forgotten"? |
 | &nbsp;❌&nbsp; | Is underage registration (under 15 years) and booking functionality restricted? |
 
+(The registration form does not ask for consent to the privacy policy. Users cannot view, edit, or delete their data. There is no “right to be forgotten” feature.)
+
 ---
 
 | **Result** | **Booking visibility** |
 | :----: | :--- |
 | &nbsp;✅&nbsp; | Are bookings visible to non-logged-in users only at the resource level<br> (without any personal data)? |
 | &nbsp;✅&nbsp; | Is it ensured that names, emails, or other personal data of bookers are not exposed<br> publicly or to unauthorized users? |
+
+(Bookings are shown without personal data, which is good.)
 
 --- 
 
@@ -30,6 +36,8 @@
 | &nbsp;✅&nbsp; | Is the system using role-based access control (e.g., reserver vs. administrator)? |
 | &nbsp;⚠️&nbsp; | Are administrator privileges limited to ensure GDPR compliance (e.g., administrators<br> cannot use data for unauthorized purposes)? |
 
+(Roles work, but administrators can see all user data without logging or restrictions.)
+
 ---
 
 | **Result** | **Privacy by Design Principles** |
@@ -37,6 +45,8 @@
 | &nbsp;⚠️&nbsp; | Has Privacy by Default been implemented (e.g., collecting the minimum data by default)? |
 | &nbsp;❌&nbsp; | Are logs implemented without unnecessarily storing personal data? |
 | &nbsp;⚠️&nbsp; | Are forms and system components designed with data protection in mind<br> (e.g., secured login, minimal fields)? |
+
+(Minimal data is collected, but logging practices and frontend protections are unclear.)
 
 ---
 
@@ -47,12 +57,16 @@
 | &nbsp;❌&nbsp; | Are data backup and recovery processes GDPR-compliant? |
 | &nbsp;❌&nbsp; | Is personal data stored in data centers located within the EU? |
 
+(No CSRF tokens, weak headers (per ZAP). Password hashing and server locations are not specified.)
+
 ---
 
 | **Result** | **Data anonymization and pseudonymization** |
 | :----: | :--- |
 | &nbsp;❌&nbsp; | Is personal data anonymized where possible? |
 | &nbsp;❌&nbsp; | Are pseudonymization techniques used to protect data while maintaining its utility? |
+
+(No signs of anonymization or pseudonymization.)
 
 ---
 
@@ -62,6 +76,8 @@
 | &nbsp;❌&nbsp; | Is there an interface or process for users to request the deletion of their personal data? |
 | &nbsp;❌&nbsp; | Can users withdraw their consent for data processing? |
 
+(No options for users to request, download, or delete their data.)
+
 ---
 
 | **Result** | **Documentation and communication** |
@@ -69,6 +85,8 @@
 | &nbsp;✅&nbsp; | Is there a privacy policy available to users during registration and easily accessible? |
 | &nbsp;❌&nbsp; | Are administrators and developers provided with documented data protection practices <br>and processing activities? |
 | &nbsp;❌&nbsp; | Is there a documented data breach response process (e.g., how to notify authorities <br>and users of a breach)? |
+
+(The privacy policy exists, but there is no internal documentation or breach response process.)
 
 ---
 
