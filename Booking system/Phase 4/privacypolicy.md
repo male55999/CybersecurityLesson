@@ -39,7 +39,8 @@ Under GDPR, you have the right to:
 We do **not** sell or share your personal information with third parties unless required by law.
 
 ## 7. Cookies
-We use cookies to enhance your user experience. See our [Cookie Policy](/Phase 4/cookiepolicy.md) for more.
+We use cookies to enhance your user experience. See our See our [Cookie Policy](https://github.com/male55999/CybersecurityLesson/blob/main/Booking%20system/Phase%204/cookiepolicy.md) for more.
+ for more.
 
 ## 8. Contact Us
 If you have questions about this policy, contact us at: **support@yourdomain.com**
