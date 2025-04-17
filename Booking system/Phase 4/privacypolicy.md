@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: [April 11, 2025]
+Last updated: [April 17, 2025]
 
 We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines what data we collect, how we use it, and your rights in accordance with GDPR.
 
@@ -39,7 +39,7 @@ Under GDPR, you have the right to:
 We do **not** sell or share your personal information with third parties unless required by law.
 
 ## 7. Cookies
-We use cookies to enhance your user experience. See our [Cookie Policy](/cookiepolicy) for more.
+We use cookies to enhance your user experience. See our [Cookie Policy](/Phase 4/cookiepolicy.md) for more.
 
 ## 8. Contact Us
 If you have questions about this policy, contact us at: **support@yourdomain.com**
