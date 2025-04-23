@@ -27,6 +27,6 @@ Overall, the Booking System Project allowed me to apply theory in a real-world s
 - Cisco Introduction to Cybersecurity: **17 hours**  
 - PortSwigger Labs: ** hours**  
 - Booking System Project (Phases 1–4): **41 hours**  
-- Documentation and report: ** hours**
+- Documentation and lectures: **7 hours**
 
 # Feedback
