@@ -17,5 +17,16 @@ In this final phase, I evaluated the booking system from a legal and privacy per
 Overall, the Booking System Project allowed me to apply theory in a real-world simulation. Across all three phases, I worked with tools like Docker, OWASP ZAP, Burp Suite, Hydra, and Hashcat. The project helped me understand the full lifecycle of a penetration test—from environment setup and vulnerability discovery to exploitation and reporting. Each phase presented new challenges that pushed me to troubleshoot, learn, and improve my technical skills.
 
 # Logbook
+### Git Repository
+[https://github.com/male55999/CybersecurityLesson](https://github.com/male55999/CybersecurityLesson)
+
+### Total Hours Spent
+** hours**
+
+### Hours per Topic
+- Cisco Introduction to Cybersecurity: ** hours**  
+- PortSwigger Labs: ** hours**  
+- Booking System Project (Phases 1–4): ** hours**  
+- Final documentation and report: ** hours**
 
 # Feedback
