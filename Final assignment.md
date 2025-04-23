@@ -5,5 +5,22 @@ During this topic, I explored the fundamentals of cybersecurity and its increasi
 
 # PortSwigger
 # The Booking system project
+# The Booking System Project
+
+### Phase 1
+In the first phase, I tested the initial version of the booking system using Docker and OWASP ZAP. I successfully deployed the application using Docker and was able to run ZAP scans to identify several basic vulnerabilities, such as missing security headers and lack of input validation. What worked well in this phase was the Docker setup and the integration of ZAP for vulnerability scanning. However, I encountered issues when interpreting some of the ZAP findings and had to adjust the scanning scope. The most time-consuming part was analyzing the ZAP results and learning to distinguish between real vulnerabilities and false positives. From this phase, I learned how to set up a penetration test environment, perform automated scans, and document findings clearly using markdown.
+
+### Phase 2
+In the second phase, I worked with an updated version of the application. I used Docker Compose to run the containers and repeated the penetration testing process. This time, I focused on verifying if the vulnerabilities identified in Phase 1 had been fixed. I also extracted password hashes from the PostgreSQL database and cracked them using Hashcat. What worked well was setting up the Docker containers again and comparing ZAP reports effectively. What didn’t work at first was configuring Hashcat properly on Windows; I had to troubleshoot issues with file paths and hash formats. The most time-consuming part was building and tuning the correct Hashcat commands, especially when creating custom masks. I learned how to conduct more advanced password cracking attacks and how to validate security improvements across versions of the same application.
+
+### Phase 3
+In the final phase, I focused on performing dictionary and non-dictionary attacks using Burp Suite and Hydra. I captured login requests with Burp, configured payloads, and tested various combinations using both wordlists and brute-force patterns. What worked very well was the Burp Suite Intruder tool for launching dictionary attacks and analyzing responses. However, I ran into difficulties with Hydra syntax and had to adjust several parameters for successful execution. The most time-intensive task was configuring Hydra for non-dictionary attacks with custom masks that aligned with the structure of the remaining unknown passwords. From this phase, I learned how to simulate real-world login attacks, evaluate system response behaviors, and appreciate the importance of rate-limiting and secure password policies.
+
+### Phase 4
+
+
+### Final Reflection
+Overall, the Booking System Project allowed me to apply theory in a real-world simulation. Across all three phases, I worked with tools like Docker, OWASP ZAP, Burp Suite, Hydra, and Hashcat. The project helped me understand the full lifecycle of a penetration test—from environment setup and vulnerability discovery to exploitation and reporting. Each phase presented new challenges that pushed me to troubleshoot, learn, and improve my technical skills.
+
 # Logbook
 # Feedback
