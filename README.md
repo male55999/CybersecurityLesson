@@ -29,4 +29,5 @@ Cybersecurity and data privacy - Spring 2025
 | 23.03.2025 | 2 | The Booking system project → Phase 2 → Part 2  | Complete |
 | 04.04.2025 | 8 | The Booking system project → Phase 3  | Complete |
 | 17.04.2025 | 6 | The Booking system project → Phase 4  | Complete |
-| 23.04.2025 | 1 | Final assignment  | Cisco and Booking System Project |
+| 23.04.2025 | 2 | Final assignment  | Cisco and Booking System Project |
+| 23.04.2025 | 4 | PortSwigger environment  | Lab 5 |
