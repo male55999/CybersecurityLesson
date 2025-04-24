@@ -6,6 +6,7 @@ During this topic, I explored the fundamentals of cybersecurity and its increasi
 # PortSwigger
 ![PortSwigger Dashboard Screenshot](https://github.com/male55999/CybersecurityLesson/blob/a2ed89f45e4a7204a4d77af45b4b26fa65894df5/PortSwigger%20screenshot.png)
 
+### Labs
 Topic SQL injection
 - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 - SQL injection vulnerability allowing login bypass
@@ -18,6 +19,7 @@ Topic Access control
 - Unprotected admin functionality
 - User role can be modified in user profile
 
+### Reflection
 Throughout this topic, I learned how web applications can be exploited through weaknesses in input validation, authentication processes, and access control mechanisms. Each lab taught me how small misconfigurations or overlooked features can become serious vulnerabilities. I especially realized the importance of server-side validation and how user input, if not properly handled, can compromise entire systems. Practicing these attacks helped me understand how attackers think, which is essential to build safer applications.
 
 # The Booking system project
