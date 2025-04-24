@@ -4,6 +4,8 @@
 During this topic, I explored the fundamentals of cybersecurity and its increasing relevance in today’s hyper-connected world. I learned about the core principles of security confidentiality, integrity, and how they apply in real scenarios. The course also covered various types of cyber threats, like phishing, malware, and social engineering. What I found particularly useful were the real world examples and case studies that highlighted how businesses and individuals are affected by cyberattacks. This topic gave me a strong foundation and context for understanding the broader goals of security in IT systems.
 
 # PortSwigger
+![PortSwigger Dashboard Screenshot](https://github.com/male55999/CybersecurityLesson/blob/d0e6d10631924bfdfb7281e6714260d80e8a0f50/PortSwigger%20screenshot%20.png)
+
 # The Booking system project
 ### Phase 1
 In the first phase, I tested the initial version of the booking system using Docker and OWASP ZAP. I successfully deployed the application using Docker and was able to run ZAP scans to identify several basic vulnerabilities, such as missing security headers and lack of input validation. What worked well in this phase was the Docker setup and the integration of ZAP for vulnerability scanning. However, I encountered issues when interpreting some of the ZAP findings and had to adjust the scanning scope. The most time-consuming part was analyzing the ZAP results and learning to distinguish between real vulnerabilities and false positives. From this phase, I learned how to set up a penetration test environment, perform automated scans, and document findings clearly using markdown.
@@ -21,11 +23,11 @@ Overall, the Booking System Project allowed me to apply theory in a real-world s
 [https://github.com/male55999/CybersecurityLesson](https://github.com/male55999/CybersecurityLesson)
 
 ### Total Hours Spent
-** hours**
+**81 hours**
 
 ### Hours per Topic
 - Cisco Introduction to Cybersecurity: **17 hours**  
-- PortSwigger Labs: ** hours**  
+- PortSwigger Labs: **16 hours**  
 - Booking System Project (Phases 1–4): **41 hours**  
 - Documentation and lectures: **7 hours**
 
